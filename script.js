@@ -8,7 +8,7 @@ for (let i = 0 ; i < 256 ; i++){
     container.appendChild(square);
 
     square.addEventListener("mouseover", () => {
-        square.style.backgroundColor = "green"
+        square.style.backgroundColor = "#DDDDDD"
     });
 }
 
