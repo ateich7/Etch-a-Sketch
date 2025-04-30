@@ -18,3 +18,11 @@ body {
     align-items: center;
     margin: 0px;
 }
+
+button {
+    padding: 8px 16px;
+    border: none;
+    margin: 20px;
+    border-radius: 100px;
+    font-weight: 700;
+}
