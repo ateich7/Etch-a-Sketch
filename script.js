@@ -8,7 +8,7 @@ for (let i = 0; i < 256; i++) {
     container.appendChild(square);
 
     square.addEventListener("mouseover", () => {
-        square.style.backgroundColor = "#DDDDDD"
+        square.style.backgroundColor = getRandomColor();
     });
 }
 
@@ -27,13 +27,19 @@ btn.addEventListener("click", () => {
             container.appendChild(square);
 
             square.addEventListener("mouseover", () => {
-                square.style.backgroundColor = "#DDDDDD"
+                square.style.backgroundColor = getRandomColor();
             });
         }
     } else {
         alert("Please enter a number below 100")
     }
-    // then create a new grid with the new size setting
-// 960 x 960 = total area, then 
 })
 
+function getRandomColor() {
+    const letters = "0123456789ABCDEF"
+    let color = "#";
+    for (let i = 0 ; i  < 6 ; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
